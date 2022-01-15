@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <title>Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <h1 id="title" class="text-center">KOREAN FOOD SURVEY</h1>
+            <p id="description" class="description text-center">What is your favorite Korean Food?</p>
+            <form id="survey-form">
+                <div class="form-group">
+                    <label id="name-label" for="name">Name</label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required="">
+                </div>
+                <div class="form-group">
+                    <label id="email-label" for="email">E-Mail</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Enter your E-Mail address" required="">
+                </div>
+                <div class="form-group">
+                    <label id="number-label" for="number">Number</label>
+                    <input type="number" name="number" id="number" class="form-control" min="5" max="100" placeholder="Enter your Number" required="">
+                </div>
+                <div class="form-group">
+                    <p>Please select one Korean Food you love</p>
+                    <select id="dropdown" name="role" class="form-control" required="">
+                    <option disabled="" selected="" value="">Select Your Favorite Korean Food</option>
+                    <option value="">Bibimbab</option>
+                    <option value="">BBQ</option>
+                    <option value="">Army Stew</option>
+                </select>
+                </div>
+                <div class="form-group">
+                    <p>How spicy can you eat?</p>
+                    <label>
+                <input name="spicy-level" value="super" type="radio" class="input-radio" checked="">Super </label>
+                    <label>
+                <input name="spicy-level" value="medium" type="radio" class="input-radio" checked="">Medium </label>
+                    <label>
+                <input name="spicy-level" value="mild" type="radio" class="input-radio" checked >None
+            </label>
+
+                </div>
+
+                <div class="form-group">
+                    <p>Soy Sauce or Gochujang?</p>
+                    <label>
+                    <input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">Soy Sauce </label>
+                    <label>
+                     <input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">Gochujang
+            </label>
+
+                </div>
+                <div class="form-group">
+                    <p>Any Comments?</p>
+                    <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">
+                    Submit
+                  </button>
+                </div>
+
+            </form>
+        </div>
+
+    </main>
+
+</body>
+
+
+</html>
